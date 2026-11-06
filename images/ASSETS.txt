@@ -1,0 +1,9 @@
+Code Club website: image assets
+Copy the whole images folder into the root of your repository (sot-code-club/images).
+
+logo.png 260x64
+hero.png 640x480
+icons/ icon-code.png icon-git.png icon-ship.png (96x96)
+events/ event-1.png event-2.png event-3.png (600x340)
+team/ member-1.png to member-4.png (240x240)
+gallery/ gallery-1.png to gallery-6.png (600x400)
