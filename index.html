@@ -19,7 +19,7 @@
                 <li><a href="team.html"></a>Team</li>
                 <li><a href="gallery.html"></a>gallery</li>
                 <li><a href="contact.html"></a>contact</li>
-                <li><a href=""></a>join us</li>
+                <li class="joinus"><a href=""></a>join us</li>
             </ul>
         </div>
     </header>
@@ -31,42 +31,82 @@
             <div class="hero-content">
                 <div class="main-content">
                     <p class="name"><span class="dot"></span>upgrad school of technology</p>
-                    <h1>we<span>build</span>, <br>share and <span>ship.</span> </h1>
-                    <span>Join the studnet club where code meets community.
+                    <h1>We<span class="build">build</span>, <br>share and <span class="ship">ship.</span> </h1>
+                    <p class="Jst">Join the studnet club where code meets community.
                         Learn Git,build real projects and send your first open
                         source pull request.
-                    </span>
-                    <button type="button">Join the club</button>
-                    <button type="button">see events</button>
+                    </p>
+                    <button class="join-the-club" type="button">Join the club</button>
+                    <button class="see-events" type="button">see events</button>
                 </div>
                 <div class="status">
                     <div class="status-card">
-                        <span>club_status.dashbo</span>
-                        <span>...</span>
+                        <span>club_status.dashboard</span>
+                        <ul class="dotted">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                     <div class="card">
-                        <div>events</div>
-                        <div>member</div>
-                        <div>open source prs</div>
-                        <div>hackthons</div>
+                        <div>
+                            <ul>
+                                <li class="icon-r"></li>
+                                <li class="num">120+</li>
+                                <li class="specific">Member</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="icon-y"></li>
+                                <li class="num">24</li>
+                                <li class="specific">Events</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="icon-c"></li>
+                                <li class="num">60</li>
+                                <li class="specific">OPEN SOURCE PRS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="icon-b"></li>
+                                <li class="num">8</li>
+                                <li class="specific">HACKATHONS</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <h5>next event: 14 nov</h5>
-                        <button type="button">open -></button>
+                        <button type="button">open => </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <marquee behavior="scroll" direction="left">your first pr could be the club history ₹ no expeience required ₹ now accept the every role ₹ every role is open </marquee>
+        <marquee behavior="scroll" direction="left">your first pr could be the club history <span>₹</span> no expeience required <span>₹</span> now accept the every role <span>₹</span> every role is open </marquee>
 
         <section class="slide2">
-            <p>what we do</p>
+            <p class="slide2p">what we do</p>
             <h1>three things every member leaves with</h1>
             <div class="cards2">
-                <div>item 1</div>
-                <div>item 2</div>
-                <div>item 3</div>
+                <div>
+                    <img src="images/icons/icon-code.png" alt="">
+                    <h3 class="num">Learn to code</h3>
+                    <p> Weekly session that takes you from your first tagto your first full website.</p>
+                </div>
+                <div>
+                    <img src="images/icons/icon-git.png" alt="">
+                    <h3 class="num">Master git and github</h3>
+                    <p>branches pull requests and review, the way real team work every day.</p>
+                </div>
+                <div>
+                    <img src="images/icons/icon-ship.png" alt="">
+                    <h3 class="num">ship real project</h3>
+                    <p>deploy your work online and show it to the world with a live link.</p>
+                </div>
             </div>
         </section>
 
@@ -75,14 +115,23 @@
                 <img src="images/about.png" alt="aboutimgs" srcset="">
             </div>
             <div class="about-text">
-                <p>about the club</p>
+                <p class="slide3p">about the club</p>
                 <h1>no waitlist. no senority.</h1>
-                <p>everyone starts with a blankrepo and 1st commit. Seniors and 1st year side by side </p>
-                <ol>
-                    <li>free workshops every week</li>
-                    <li>mentors for your first pull req.</li>
-                    <li>project you can show to employee</li>
-                </ol>
+                <p class="slide3pps">everyone starts with a blankrepo and 1st commit. Seniors and 1st year side by side </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                        <label for="">free workshops every week</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <label for="">mentors for your first pull req.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <label for="">project you can show to employee</label>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -91,10 +140,11 @@
                 <div class="git-side">
                     <p>next step</p>
                     <h2>git & github workshop</h2>
-                    <p>saturday,14 november - lab 3 - free for all students</p>
+                    <p class="dt">saturday,14 november - lab 3 - free for all students</p>
                 </div>
-                <div class="reserve-b"></div>
-                <button type="button">reserve a seat</button>
+                <div class="reserve-b">
+                    <button type="button">reserve a seat</button>
+                </div>    
             </div>
         </section>
     </main>
@@ -104,16 +154,18 @@
     <footer>
         <div class="down">
             <div class="community">
-                <h4>code club</h4>
+                <p class="logo">
+                <span class="squarelogo"></span>Code <span>Club.</span>
+            </p>
                 <p>a student community at upgrad school of technology. we learn by building,sharing and shipping.</p>
             </div>
             <div class="explore">
                 <h2>explore</h2>
                 <ul>
-                    <li>Events</li>
-                    <li>Team</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+                    <li><a href="events.html"></a>Events</li>
+                    <li><a href="team.html"></a>Team</li>
+                    <li><a href="gallery.html"></a>gallery</li>
+                    <li><a href="contact.html"></a>contact</li>
                 </ul>
             </div>
             <div class="convo">
@@ -124,7 +176,7 @@
                 </ul>
             </div>
         </div>
-        <p>2026 code club - upgrad school of technology</p>
+        <p class="footer-y">2026 code club - upgrad school of technology</p>
     </footer>
 
 
