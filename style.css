@@ -17,6 +17,7 @@
     margin: 0;
 }
 
+
 .navbar{
     background-color: var(--pg-bg);
     display: flex;
@@ -55,6 +56,7 @@
     align-content: center;
     font-size: larger;
     list-style: none;
+    
 }
 
 .navbar ul li{
@@ -64,6 +66,14 @@
     transition: all 0.3s;
 }
 
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+
 .navbar ul li:hover{
     background-color: #d94656;
     color: white;
@@ -71,6 +81,7 @@
     border: #151310 4px solid;
     box-shadow: 1px 2px  var(--tx-bs) ;
 }
+
 
 main {
     background-color: var(--pg-bg);
@@ -533,6 +544,10 @@ footer .down .explore h2{
 footer .down .explore ul{
     list-style-type:none;
 } 
+footer .down .explore ul li a{
+    color: white;
+    text-decoration: none;
+}
 
 footer .convo h2{
     margin-bottom: 5px;
