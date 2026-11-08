@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+
+:root{
+    --pg-bg:#f2eee3;
+    --cd-pn:#fffdf6;
+    --tx-bs:#151310;
+    --link:#d94656;
+    --hi-lt:#f7c95b;
+    --if-cd:#6cc3d0;
+    --sd-tx:#6b6558;
+}
+
+* {
+    padding: 0;
+    font-family: 'Space Grotesk';
+    margin: 0;
+}
+
+
+.navbar{
+    background-color: var(--pg-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 20px 30px;
+}
+
+.navbar .logo {
+    text-decoration: none;
+    font-size:38px;
+    text-transform: capitalize;
+    
+}
+
+.navbar .logo .squarelogo{
+    font-size: large;
+    background-color: #e9e3e3;
+    padding: 9px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 15%;
+    margin-right: 5px;
+    background: var(--link);
+    border: 3px solid black;
+    box-shadow: 2px -2px black;
+
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-content: center;
+    font-size: larger;
+    list-style: none;
+    
+}
+
+.navbar ul li{
+    margin:auto 19px;
+    padding: 3px 18px;
+    border: solid 4px transparent;
+    transition: all 0.3s;
+}
+
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+
+.navbar ul li:hover{
+    background-color: #d94656;
+    color: white;
+    border-radius: 40px;
+    border: #151310 4px solid;
+    box-shadow: 1px 2px  var(--tx-bs) ;
+}
+
+
+main {
+    background-color: var(--pg-bg);
+    background-image: radial-gradient(rgba(21,19,16,.32)1.2px , transparent 1.4px);
+    background-size: 26px 26px;
+}
+.hero-section .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 110px;
+}
+
+.hero-section .hero-content .name {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px  var(--tx-bs) ;
+}
+
+.hero-section .hero-content .dot{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: var(--link);
+}
+
+.hero-section .hero-content .main-content h1{
+    font-size: 120px;
+}
+
+span.build {
+    display: inline-block;
+    background-color: var(--hi-lt);
+    border: 6px solid var(--tx-bs);
+    border-radius: 30px;
+    padding: 0px 10px;
+    transform: rotate(-2deg);
+    margin-top:9px;
+    margin-left: 19px;
+}
+span.ship{
+    color: var(--link);
+}
+
+.hero-section .hero-content .main-content p.Jst{
+    font-size: x-large;
+    line-height: 40px;
+    padding-right: 15px;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.hero-section .hero-content .main-content button.join-the-club {
+    background-color: #d94656;
+    color: white;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: x-large;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    border: #151310 4px solid;
+    box-shadow: 4px 6px  var(--tx-bs)
+}
+
+.hero-section .hero-content .main-content button.see-events{
+    background-color: var(--cd-pn);
+    color: black;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: x-large;
+    padding: 20px 50px;
+    border-radius: 15px;
+    border: #151310 4px solid;
+    box-shadow: 4px 6px  var(--tx-bs)
+}
+
+
+.hero-content .status  {
+    color: black;
+    background-color: var(--cd-pn);
+    border-radius: 40px;
+    border: #151310 4px solid;
+    box-shadow: 6px 10px  var(--tx-bs)
+}
+
+.hero-content .status .status-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #151310;
+}
+
+.hero-content .status .status-card .dotted {
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.hero-content .status .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 30px 20px;
+}
+
+.hero-content .status .card div{
+    padding: 20px;
+    background-color:var(--pg-bg);
+    margin: 10px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.hero-content .status .card ul{
+    list-style: none;
+}
+.hero-content .status .card li.icon-r {
+    width: 50px;
+    height: 50px;
+    background-color: var(--link);
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px var(--tx-bs);
+}
+
+.hero-content .status .card li.icon-y {
+    width: 50px;
+    height: 50px;
+    background-color: var(--hi-lt);
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px var(--tx-bs);
+}
+
+.hero-content .status .card li.icon-c {
+    width: 50px;
+    height: 50px;
+    background-color: var(--if-cd);
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px var(--tx-bs);
+}
+
+.hero-content .status .card li.icon-b {
+    width: 50px;
+    height: 50px;
+    background-color: var(--tx-bs);
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px var(--tx-bs);
+}
+
+.hero-content .status .card li.num {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-content .status .card li.specific{
+    font-size: large;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.hero-content .status .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px 10px;
+    background-color: var(--link);
+    padding: 30px 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 3px solid black;
+}
+.hero-content .status .card-footer button{
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color:rgba(202, 191, 192, 0.265);
+    color: white;
+}
+
+marquee{
+    background-color: black;
+    padding: 10px ;
+    color:white;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 20px;
+}
+marquee span{
+    margin: 0px 8px;
+    color: #f7c95b;
+    font-size: 30px;
+}
+
+.slide2{
+     padding: 120px 110px;
+     border-bottom:6px solid #151310;
+}
+
+.slide2 .cards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.slide2 .slide2p{
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px var(--tx-bs);
+}
+
+.slide2 h1{
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.slide2 div{
+    padding: 30px 20px;
+}
+.slide2 .cards2 div{
+    color: black;
+    background-color: var(--cd-pn);
+    border-radius: 40px;
+    border: #151310 4px solid;
+    box-shadow: 6px 10px  var(--tx-bs);
+    margin-right: 30px;
+}
+
+.slide2 .cards2 img{
+    margin-bottom: 10px;
+}
+
+.slide2 .cards2 h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.slide2 .cards2 p{
+    font-size: 20px;
+    opacity: 0.5;
+    text-transform: capitalize;
+
+}
+
+.slide3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cd-pn);
+    padding: 100px 150px;
+    border-bottom: #151310 7px solid;
+}
+
+.slide3 .about-img{
+    max-width: 640px;
+    max-height: 480px;
+    border: 8px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px black;
+}
+.slide3 .about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.slide3 .slide3p{
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px var(--tx-bs);
+}
+
+.slide3 h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.slide3 .about-text .slide3pps{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.slide3 .about-text ul{
+    list-style-type:none ;
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.slide3 .about-text li{
+    display: flex;
+    margin-bottom: 20px;
+}
+.slide3 .about-text input[type = "checkbox"]{
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    border-radius: 5px;
+    vertical-align:middle;
+    margin-bottom: 0px;
+    appearance:none;
+    border: #151310 3px solid;
+    background-color: var(--hi-lt); 
+}
+.slide3 .about-text input[type = "checkbox"]:checked{
+    background-color: var(--hi-lt);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23151310' stroke-width='3' d='m3 8 3 3 7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 22px;
+}
+
+.slide3 .about-text ul label{
+    text-transform: capitalize;
+}
+
+.workshop{
+    padding: 40px 75px;
+}
+.workshop .workshop-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    border-radius: 20px;
+    box-shadow: 8px 8px black;
+}
+
+.workshop .workshop-card .git-side p{
+    text-transform: uppercase;
+    font-size: 20px;
+    opacity: 0.5;
+    letter-spacing: 3px;
+}
+
+.workshop .workshop-card .git-side h2{
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+.workshop .workshop-card .git-side .dt{
+    opacity: 1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.workshop .workshop-card .reserve-b button{
+    margin: 30px 70px;
+    margin-right: 80px;
+    font-size: 30px;
+    padding: 30px 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hi-lt);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 6px 6px var(--link);
+    background-color: black;
+}
+
+footer{
+    margin-bottom: 20px;
+}
+
+footer .down{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 60px 100px ;
+    color: white;
+    background-color: #151310;
+}
+
+footer .down div{
+    padding-right: 40px;
+}
+
+footer .down .community .logo {
+    text-decoration: none;
+    font-size:30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    
+}
+
+footer .down .community .logo .squarelogo{
+    font-size: large;
+    background-color: #e9e3e3;
+    padding: 9px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-radius: 15%;
+    margin-right: 5px;
+    background: var(--link);
+    border: 3px solid black;
+    box-shadow: 2px -2px black;
+}
+
+footer .down .community p{
+    text-transform: capitalize;
+    font-size: large;
+}
+
+footer .down .explore h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--hi-lt);
+}
+
+footer .down .explore ul{
+    list-style-type:none;
+} 
+footer .down .explore ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .convo h2{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    color: var(--hi-lt);
+}
+
+footer .convo ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+footer p.footer-y{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    text-transform:uppercase;
+    letter-spacing: 8px;
+    word-spacing: 5px;
+}
