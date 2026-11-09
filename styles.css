@@ -711,3 +711,139 @@ footer p.footer-y{
 .detail-past-events span{
     color: #d94656;
 }
+
+
+
+
+/* ++++++++========.  TEAM PAGE STYLE   ========++++++++ */
+
+
+.meet{
+    padding: 70px 100px;
+    border-bottom: 4px black solid;
+}
+
+.meet-info{
+    font-size: 30px;
+    text-transform: capitalize;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.meet-p{
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px  var(--tx-bs)
+}
+
+.meet h1{
+    font-size: 90px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.join{
+    padding: 70px 100px;
+    border-bottom: 4px black solid;
+}
+
+.stu-id{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.studentid{
+    background-color: var(--cd-pn);
+    border: 4px solid black;
+    box-shadow: 6px 6px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.p-pic{
+    margin: 20px 40px;;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px black solid;
+    box-shadow: 4px 4px black;
+}
+
+.p-pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.studentid h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.studentid p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--link);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.studentid ul{
+    display: flex;
+    margin-bottom: 40px;
+    justify-self: center;
+    gap: 10px;
+    font-size: larger;
+}
+
+.studentid ul li{
+    text-transform: capitalize;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.studentid ul li a{
+    color: black;
+    text-align: center;
+}
+
+.join-banner{
+    padding: 70px 100px;
+    border: 5px black solid;
+    border-radius: 20px;
+    background-color: var(--if-cd);
+    text-align: center;
+    box-shadow: 8px 8px black;
+}
+
+.join-banner h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.join-banner p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.join-banner button{
+    color: white;
+    background-color: var(--link);
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 4px black solid;
+    text-transform: uppercase;
+}
+}
