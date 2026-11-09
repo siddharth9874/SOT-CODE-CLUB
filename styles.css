@@ -846,4 +846,34 @@ footer p.footer-y{
     border: 4px black solid;
     text-transform: uppercase;
 }
+
+
+/* +++++++=======  Gallery page   =======+++++++ */
+
+.photos{
+    padding: 70px 100px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 40px;
+}
+
+.g-pic{
+    border: 6px black solid;
+    box-shadow: 8px 8px black ;
+    border-radius: 10px;    
+    width: 500px;
+    overflow: hidden;
+}
+.g-pic img {
+    width: 500px;
+}
+.g-pic p{
+    font-size: large;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    background-color: var(--hi-lt);
+    border-top:4px solid black;
 }
