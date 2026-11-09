@@ -570,3 +570,279 @@ footer p.footer-y{
     letter-spacing: 8px;
     word-spacing: 5px;
 }
+
+
+
+
+/* ===== EVENTS PAGE STYLES ===== */
+
+.events-content{
+    padding: 70px 100px;
+}
+
+.Events-section{
+    border-bottom: 4px solid black;
+}
+
+.events-content p.name{
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px  var(--tx-bs) ;
+}
+
+.events-content h1{
+    font-size: 90px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.events-content p.name-info{
+    font-size: x-large;
+    line-height: 40px;
+    padding-right: 15px;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.tracks , .pastevents{
+    padding: 70px 100px 90px 100px;
+    border-bottom: 5px solid black;
+}
+.tracks h1.t-head , .pastevents h1{ 
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.template{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+}
+.tracks-events{
+    border: 5px solid black;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px black;
+    position: relative;
+}
+.tracks-events img{
+    object-fit: cover;
+    width: 500px;
+    border-bottom: #151310 5px solid;
+}
+
+.tracks-events .track-p{
+    margin-left: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px  var(--tx-bs)
+}
+
+.date{
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    background:var(--link);
+    padding: 10px 15px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+.template h1{
+    margin: 10px 20px 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.template .track-info-p{
+    margin-left: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+
+.template button{
+    margin: 40px 20px;
+    padding:10px 30px;
+    background-color: var(--link);
+    color: white;
+    border: 5px solid black;
+    font-size: 25px;
+    text-transform:uppercase ;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}   
+
+.tracks-events:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    box-shadow: 6px 6px 50px 9px rgba(0, 0, 0, 0.386);
+}
+
+.pastevents{
+    background-color: var(--cd-pn);
+}
+.detail-past-events{
+    display: flex;
+    gap:40px;
+    padding: 20px 0px;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-bottom: black dashed 3px;
+}
+.detail-past-events span{
+    color: #d94656;
+}
+
+
+
+
+/* ++++++++========.  TEAM PAGE STYLE   ========++++++++ */
+
+
+.meet{
+    padding: 70px 100px;
+    border-bottom: 4px black solid;
+}
+
+.meet-info{
+    font-size: 30px;
+    text-transform: capitalize;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.meet-p{
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    background-color: var(--hi-lt);
+    border: #151310 4px solid;
+    box-shadow: 1px 3px  var(--tx-bs)
+}
+
+.meet h1{
+    font-size: 90px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.join{
+    padding: 70px 100px;
+    border-bottom: 4px black solid;
+}
+
+.stu-id{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.studentid{
+    background-color: var(--cd-pn);
+    border: 4px solid black;
+    box-shadow: 6px 6px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.p-pic{
+    margin: 20px 40px;;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px black solid;
+    box-shadow: 4px 4px black;
+}
+
+.p-pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.studentid h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.studentid p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--link);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.studentid ul{
+    display: flex;
+    margin-bottom: 40px;
+    justify-self: center;
+    gap: 10px;
+    font-size: larger;
+}
+
+.studentid ul li{
+    text-transform: capitalize;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.studentid ul li a{
+    color: black;
+    text-align: center;
+}
+
+.join-banner{
+    padding: 70px 100px;
+    border: 5px black solid;
+    border-radius: 20px;
+    background-color: var(--if-cd);
+    text-align: center;
+    box-shadow: 8px 8px black;
+}
+
+.join-banner h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.join-banner p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.join-banner button{
+    color: white;
+    background-color: var(--link);
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 4px black solid;
+    text-transform: uppercase;
+}
