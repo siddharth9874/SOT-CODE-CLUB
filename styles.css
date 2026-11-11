@@ -70,7 +70,7 @@
     color: black;
     text-decoration: none;
 }
-.navbar ul li a:hover{
+.navbar ul li:hover a{
     color: white;
 }
 
@@ -876,4 +876,487 @@ footer p.footer-y{
     padding: 20px 25px;
     background-color: var(--hi-lt);
     border-top:4px solid black;
+}
+
+.c-form{
+    display: flex;
+    padding: 70px 100px;
+    gap: 70px;
+}
+
+form.m-form {
+    width: 70%;
+    border: 4px solid black;
+    background-color: var(--cd-pn);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 6px 8px black;
+}
+fieldset{
+    padding: 40px 30px;
+    overflow: hidden;
+}
+.m-form h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.field{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.field label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.field input , .field select {
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.field textarea{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.m-form button{
+    background-color: var(--link);
+    border: 4px solid black;
+    padding: 20px 40px ;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 4px 4px black;
+}
+
+aside{
+    padding: 50px 40px ;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: var(--if-cd);
+    display: inline-block;
+    height:fit-content;
+    width: 300px;
+    box-shadow: 6px 6px black;
+}
+
+aside h2{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+aside div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-size:20px ;
+}
+.qna{
+    padding: 70px 100px;
+    border-top: 4px solid black;
+    background-color: var(--cd-pn);
+    display: flex;
+    justify-content: center
+}
+
+.qna h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.qna ol{
+    padding-left: 0;
+    list-style-position: inside;
+}
+.qna ol li{
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px 15px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+}
+
+@media (max-width: 600px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .navbar .logo {
+        font-size: 28px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .navbar ul li {
+        margin: 2px;
+        padding: 4px 8px;
+        border-width: 2px;
+    }
+
+    .hero-section .hero-content {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 48px 20px;
+    }
+
+    .hero-section .hero-content .main-content h1 {
+        font-size: clamp(48px, 14vw, 64px);
+    }
+
+    span.build {
+        border-width: 4px;
+        margin-left: 6px;
+    }
+
+    .hero-section .hero-content .main-content p.Jst {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .hero-section .hero-content .main-content button.join-the-club,
+    .hero-section .hero-content .main-content button.see-events {
+        width: 100%;
+        margin: 18px 0 0;
+        padding: 14px 18px;
+        font-size: 18px;
+    }
+
+    .hero-content .status .status-card {
+        gap: 8px;
+        padding: 14px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content .status .status-card .dotted {
+        gap: 8px;
+        font-size: 20px;
+    }
+
+    .hero-content .status .card {
+        padding: 12px;
+    }
+
+    .hero-content .status .card div {
+        min-width: 0;
+        margin: 5px;
+        padding: 12px;
+    }
+
+    .hero-content .status .card li.icon-r,
+    .hero-content .status .card li.icon-y,
+    .hero-content .status .card li.icon-c,
+    .hero-content .status .card li.icon-b {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content .status .card li.num {
+        font-size: 32px;
+    }
+
+    .hero-content .status .card li.specific {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content .status .card-footer {
+        gap: 8px;
+        margin: 0 12px 12px;
+        padding: 12px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content .status .card-footer button {
+        margin-right: 0;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    marquee {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    marquee span {
+        font-size: 20px;
+    }
+
+    .slide2 {
+        padding: 44px 20px;
+    }
+
+    .slide2 h1 {
+        font-size: 32px;
+    }
+
+    .slide2 .cards2 {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .slide2 .cards2 div {
+        margin-right: 0;
+        padding: 24px 20px;
+    }
+
+    .slide2 .cards2 h3 {
+        font-size: 22px;
+    }
+
+    .slide2 .cards2 p {
+        font-size: 16px;
+    }
+
+    .slide3 {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 44px 20px;
+    }
+
+    .slide3 .about-img {
+        width: 100%;
+        max-height: none;
+    }
+
+    .slide3 h1 {
+        font-size: 38px;
+    }
+
+    .slide3 .about-text .slide3pps {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .slide3 .about-text ul {
+        font-size: 16px;
+    }
+
+    .slide3 .about-text input[type="checkbox"] {
+        flex: 0 0 28px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .workshop {
+        padding: 32px 20px;
+    }
+
+    .workshop .workshop-card {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px;
+    }
+
+    .workshop .workshop-card .git-side h2 {
+        font-size: 36px;
+    }
+
+    .workshop .workshop-card .git-side .dt {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .workshop .workshop-card .reserve-b button {
+        width: 100%;
+        margin: 0;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    footer .down {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 40px 20px;
+    }
+
+    footer .down div {
+        padding-right: 0;
+    }
+
+    footer p.footer-y {
+        padding: 12px 16px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.6;
+    }
+
+    .events-content,
+    .meet {
+        padding: 44px 20px;
+    }
+
+    .events-content h1,
+    .meet h1 {
+        font-size: 56px;
+    }
+
+    .events-content p.name-info,
+    .meet-info {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .tracks,
+    .pastevents {
+        padding: 44px 20px;
+    }
+
+    .tracks h1.t-head,
+    .pastevents h1 {
+        font-size: 36px;
+    }
+
+    .template {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .tracks-events {
+        width: 100%;
+    }
+
+    .tracks-events img {
+        display: block;
+        width: 100%;
+    }
+
+    .template h1 {
+        font-size: 25px;
+    }
+
+    .template .track-info-p {
+        font-size: 17px;
+    }
+
+    .template button {
+        margin: 28px 20px;
+        font-size: 18px;
+    }
+
+    .tracks-events:hover {
+        transform: none;
+    }
+
+    .detail-past-events {
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .join {
+        padding: 40px 20px;
+    }
+
+    .stu-id {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .studentid {
+        width: 100%;
+        max-width: 340px;
+        padding: 16px;
+    }
+
+    .p-pic {
+        width: 180px;
+        height: 180px;
+        margin: 8px auto 20px;
+    }
+
+    .join-banner {
+        padding: 36px 20px;
+    }
+
+    .join-banner h2 {
+        font-size: 32px;
+    }
+
+    .photos {
+        padding: 40px 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .g-pic {
+        width: 100%;
+    }
+
+    .g-pic img {
+        display: block;
+        width: 100%;
+    }
+
+    .c-form {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 28px;
+    }
+
+    form.m-form,
+    aside {
+        width: 100%;
+    }
+
+    fieldset {
+        min-width: 0;
+        padding: 24px 18px;
+    }
+
+    .m-form h1,
+    .qna h2 {
+        font-size: 32px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+        width: 100%;
+    }
+
+    .m-form button {
+        max-width: 100%;
+        padding: 16px 20px;
+    }
+
+    aside {
+        padding: 28px 22px;
+    }
+
+    aside h2 {
+        font-size: 32px;
+    }
+
+    .qna {
+        padding: 40px 20px;
+    }
 }
