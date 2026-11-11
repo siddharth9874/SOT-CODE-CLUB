@@ -1361,7 +1361,8 @@ aside div{
     }
 }
 
-/* exepermental thing */
-body{
-    background-color: red;
+
+/* Exeperiment on mobile version */
+body {
+    background: red;
 }
